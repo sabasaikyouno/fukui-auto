@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在庫・査定・車検のお問い合わせ | オートベース福井</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav is-scrolled" id="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html">オートベース福井<span>AUTO BASE FUKUI</span></a>
+    <nav class="nav__links">
+      <a href="index.html#stock">在庫一覧</a>
+      <a href="index.html#maintenance">車検・整備</a>
+      <a href="index.html#access">アクセス</a>
+    </nav>
+    <a class="btn btn--ghost nav__cta" href="index.html">トップへ戻る</a>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>在庫・査定・車検のお問い合わせ</h1>
+  </div>
+</section>
+
+<section class="form-wrap">
+  <div class="wrap form-grid">
+    <div>
+      <p class="lead">在庫のお問い合わせ、下取り・買取の査定依頼、車検・整備のお見積りをまとめて承っています。担当より1営業日以内にご連絡いたします。</p>
+      <form class="form" id="contactForm" style="margin-top:36px">
+        <div class="field">
+          <label for="name">お名前<span class="req">必須</span></label>
+          <input type="text" id="name" name="name" required placeholder="福井 太郎">
+        </div>
+        <div class="field field--row">
+          <div>
+            <label for="email">メールアドレス<span class="req">必須</span></label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="tel">お電話番号<span class="req">必須</span></label>
+            <input type="tel" id="tel" name="tel" required placeholder="0776-00-0000">
+          </div>
+        </div>
+        <div class="field">
+          <label for="type">お問い合わせの種類<span class="req">必須</span></label>
+          <select id="type" name="type" required>
+            <option value="">お選びください</option>
+            <option>在庫車についての問い合わせ</option>
+            <option>買取・下取りの査定依頼</option>
+            <option>車検・整備の見積り依頼</option>
+            <option>ローン・保証について相談したい</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="field field--row">
+          <div>
+            <label for="car">対象の車種・在庫名</label>
+            <input type="text" id="car" name="car" placeholder="例：コンパクトSUV・4WD（掲載車以外でも可）">
+          </div>
+          <div>
+            <label for="budget">ご予算・お車の年式など</label>
+            <input type="text" id="budget" name="budget" placeholder="例：総額100万円くらいまで／2018年式・5万km">
+          </div>
+        </div>
+        <div class="field">
+          <label for="contact-way">ご希望の連絡方法</label>
+          <select id="contact-way" name="contact-way">
+            <option>どちらでも</option>
+            <option>電話</option>
+            <option>メール</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">ご質問・ご要望</label>
+          <textarea id="message" name="message" placeholder="現在お乗りのお車のこと、下取り希望、車検の時期、ローンのご希望など、なんでもお書きください。"></textarea>
+          <p class="field__hint">来店前にお調べできることは事前にご案内します。</p>
+        </div>
+        <div class="form__actions">
+          <button type="submit" class="btn btn--primary">この内容で送信する</button>
+          <p class="form__note">送信いただいた内容は、お問い合わせへの回答にのみ使用します。</p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="aside">
+      <h3>お問い合わせにあたって</h3>
+      <ul>
+        <li>在庫は入れ替わりが早いため、来店前のお問い合わせをおすすめします。</li>
+        <li>査定のみのご依頼でも、ご購入の予定が無くても構いません。</li>
+        <li>車検・整備のお見積りは、車検証の写真を送っていただけるとより正確です。</li>
+        <li>お急ぎの場合はお電話（0776-00-0000）かチャットでもお問い合わせいただけます。</li>
+        <li>営業時間は9:30〜18:30、水曜定休です。</li>
+      </ul>
+      <p class="demo-notice">これはチャットボット導入テスト用のデモサイトです。実際の店舗・在庫・受付は存在しません。送信ボタンを押しても、どこにも送信されません。</p>
+    </aside>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__bottom" style="margin-top:0;border-top:0;padding-top:0">
+      <span>&copy; オートベース福井（デモサイト）</span>
+      <span class="demo-pill">Demo Site</span>
+    </div>
+  </div>
+</footer>
+
+<div class="test-banner">🔧 <b>TEST SITE</b> — これはチャットボット導入テスト用のデモサイトです。実際の店舗はありません。</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('デモサイトのため、実際には送信されません。\n\n実際のサイトでは、この内容が店舗へ届きます。');
+  });
+</script>
+
+<!-- LIENS BOT チャットウィジェット -->
+<!-- ⚠️ data-bot-id は index.html と同じIDに差し替えること -->
+<script>
+  (function() {
+    var botId = 'cmtfgkt1804r74201loiliqqc';
+    if (botId.indexOf('REPLACE_') === 0) { return; }
+    var script = document.createElement('script');
+    script.src = 'https://app.liens-web.com/widget.js?v=' + Date.now();
+    script.setAttribute('data-bot-id', botId);
+    script.setAttribute('data-api-url', 'https://app.liens-web.com');
+    script.setAttribute('data-color', '#e2560f');
+    script.setAttribute('data-position', 'bottom-right');
+    script.defer = true;
+    document.head.appendChild(script);
+  })();
+</script>
+</body>
+</html>
